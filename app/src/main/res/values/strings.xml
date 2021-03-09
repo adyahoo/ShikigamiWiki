@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ShikigamiesWiki</string>
+    <string name="dev_name">Maulidi Adi Prasetia</string>
+    <string name="dev_email">maulidy.ady666@yahoo.com</string>
+    <string name="role_samurai">Samurai</string>
+    <string name="role_ninja">Ninja</string>
+    <string name="role_mage">Mage</string>
+    <string name="role_Marksman">Marksman</string>
+    <string name="role_support">Support</string>
+    <string name="role_samurai_ninja">Samurai/Ninja</string>
+    <string name="dif_easy">Easy</string>
+    <string name="dif_normal">Normal</string>
+    <string name="dif_hard">Hard</string>
+    <string name="dif_extreme">Extreme</string>
+</resources>

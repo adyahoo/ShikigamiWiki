@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".DetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brown_toolbar2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/back_to_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shikigami Detail"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="8dp"/>
+"
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_shikigami_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_toolbar"
+        android:padding="8dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/img_shikigami"
+            android:layout_width="180dp"
+            android:layout_height="250dp"
+            android:src="@color/gray"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_shikigami"
+            android:layout_alignTop="@id/img_shikigami"
+            android:layout_alignBottom="@id/img_shikigami"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/rl_shikigami_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_round"
+                android:backgroundTint="@color/brown_toolbar2"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_shikigami_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shikigami Name"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/role_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_shikigami_name"
+                    android:layout_marginTop="12dp"
+                    android:text="Role"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_shikigami_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/role_title"
+                    android:text="Role of Shikigami"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/speciality_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_shikigami_role"
+                    android:layout_marginTop="10dp"
+                    android:text="Speciality"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_shikigami_speciality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/speciality_title"
+                    android:text="Speciality of Shikigami"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_shikigami_difficulty"
+                android:layout_width="5dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/rl_shikigami_profile"
+                android:layout_alignLeft="@id/rl_shikigami_profile"
+                android:layout_alignRight="@id/rl_shikigami_profile"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:text="Difficulty"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/rectangle_round"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@id/rl_shikigami_status">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:text="Intro"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_shikigami_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_round"
+            android:backgroundTint="@color/brown_toolbar2"
+            android:maxLines="10"
+            android:textColor="@color/white"
+            android:text="Shikigami Intro"
+            android:textSize="18sp"
+            android:padding="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
